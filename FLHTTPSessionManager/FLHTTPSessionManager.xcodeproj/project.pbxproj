@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C306E61E49642D00F7ADA9 /* FLURLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C306E51E49642D00F7ADA9 /* FLURLSessionManager.swift */; };
 		11FEDA9D1E488C8100EA72CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FEDA9C1E488C8100EA72CB /* AppDelegate.swift */; };
 		11FEDA9F1E488C8100EA72CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FEDA9E1E488C8100EA72CB /* ViewController.swift */; };
 		11FEDAA21E488C8100EA72CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FEDAA01E488C8100EA72CB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11C306E51E49642D00F7ADA9 /* FLURLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLURLSessionManager.swift; sourceTree = "<group>"; };
 		11FEDA991E488C8100EA72CB /* FLHTTPSessionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLHTTPSessionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FEDA9C1E488C8100EA72CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FEDA9E1E488C8100EA72CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				11FEDA9C1E488C8100EA72CB /* AppDelegate.swift */,
 				11FEDA9E1E488C8100EA72CB /* ViewController.swift */,
 				11FEDAAE1E488CBB00EA72CB /* FLHttpSessionManager.swift */,
+				11C306E51E49642D00F7ADA9 /* FLURLSessionManager.swift */,
 				11FEDAAF1E488CBB00EA72CB /* FLURLRequestSerialization.swift */,
 				11FEDAA01E488C8100EA72CB /* Main.storyboard */,
 				11FEDAA31E488C8100EA72CB /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				11FEDA9F1E488C8100EA72CB /* ViewController.swift in Sources */,
 				11FEDA9D1E488C8100EA72CB /* AppDelegate.swift in Sources */,
 				11FEDAB11E488CBB00EA72CB /* FLURLRequestSerialization.swift in Sources */,
+				11C306E61E49642D00F7ADA9 /* FLURLSessionManager.swift in Sources */,
 				11FEDAB01E488CBB00EA72CB /* FLHttpSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +312,7 @@
 				11FEDAAD1E488C8100EA72CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
