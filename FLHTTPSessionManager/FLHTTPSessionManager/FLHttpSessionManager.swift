@@ -1,12 +1,32 @@
-//
-//  FLHttpSessionManager.swift
-//  swiftLearning
-//
-//  Created by clarence on 17/2/5.
-//  Copyright © 2017年 gitKong. All rights reserved.
-//
+/*
+ * author gitKong
+ *
+ * gitHub https://github.com/gitkong
+ * cocoaChina http://code.cocoachina.com/user/
+ * 简书 http://www.jianshu.com/users/fe5700cfb223/latest_articles
+ * QQ 279761135
+ * 微信公众号 原创技术分享
+ * 喜欢就给个like 和 star 喔~
+ */
 
 import UIKit
+
+
+struct Result {
+    var success:(URLSessionDataTask,Any)->() = {
+        (task,data)->()
+        in
+    }
+    var failure:(URLSessionDataTask,Any)->() = {
+        (task,error)->()
+        in
+    }
+}
+
+enum Response {
+    case success(URLSessionDataTask,Any),failure(URLSessionDataTask,Any)
+}
+
 
 class FLHttpSessionManager: NSObject {
     
@@ -32,6 +52,67 @@ class FLHttpSessionManager: NSObject {
         self.session = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
     }
     
+    /*
+     *  @author gitkong
+     *
+     *  使用枚举
+     */
+    func fl_GET(urlString:String,params:Dictionary<String,Any>,complete:@escaping (Response)->())->(URLSessionDataTask){
+        
+        let task = self.fl_GET(urlString: urlString, params: params, success: { (task, data) in
+            complete(Response.success(task,data))
+        }) { (task, error) in
+            complete(Response.failure(task,error))
+        }
+        
+        return task
+    }
+    
+    
+    func fl_POST(urlString:String,params:Dictionary<String,Any>,complete:@escaping (Response)->())->(URLSessionDataTask){
+        
+        let task = self.fl_POST(urlString: urlString, params: params, success: { (task, data) in
+            complete(Response.success(task,data))
+        }) { (task, error) in
+            complete(Response.failure(task,error))
+        }
+        
+        return task
+    }
+    
+    
+    /*
+     *  @author gitkong
+     *
+     *  使用结构体回调
+     */
+    func fl_GET(urlString:String,params:Dictionary<String,Any>,complete:Result)->(URLSessionDataTask){
+        
+        let task = self.fl_GET(urlString: urlString, params: params, success: { (task, data) in
+            complete.success(task,data)
+        }) { (task, error) in
+            complete.failure(task,error)
+        }
+        
+        return task
+    }
+    
+    func fl_POST(urlString:String,params:Dictionary<String,Any>,complete:Result)->(URLSessionDataTask){
+        let task = self.fl_POST(urlString: urlString, params: params, success: { (task, data) in
+            complete.success(task,data)
+        }) { (task, error) in
+            complete.failure(task,error)
+        }
+        
+        return task
+    }
+    
+    
+    /*
+     *  @author gitkong
+     *
+     *  直接闭包回调
+     */
     func fl_GET(urlString:String,params:Dictionary<String,Any>,success:@escaping (URLSessionDataTask,Any)->(),failure:@escaping (URLSessionDataTask,Any)->())->(URLSessionDataTask){
         
         return self.fl_dataTask(urlString: urlString, method: "GET", params: params, success: success, failure: failure)
