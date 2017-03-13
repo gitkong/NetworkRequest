@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113BE5D31E767062007CDC64 /* FLNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BE5D21E767061007CDC64 /* FLNetworkTool.swift */; };
 		11C306E61E49642D00F7ADA9 /* FLURLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C306E51E49642D00F7ADA9 /* FLURLSessionManager.swift */; };
 		11FEDA9D1E488C8100EA72CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FEDA9C1E488C8100EA72CB /* AppDelegate.swift */; };
 		11FEDA9F1E488C8100EA72CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FEDA9E1E488C8100EA72CB /* ViewController.swift */; };
@@ -15,9 +16,11 @@
 		11FEDAA71E488C8100EA72CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FEDAA51E488C8100EA72CB /* LaunchScreen.storyboard */; };
 		11FEDAB01E488CBB00EA72CB /* FLHttpSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FEDAAE1E488CBB00EA72CB /* FLHttpSessionManager.swift */; };
 		11FEDAB11E488CBB00EA72CB /* FLURLRequestSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FEDAAF1E488CBB00EA72CB /* FLURLRequestSerialization.swift */; };
+		2E59E9755338222913DE424B /* Pods_FLHTTPSessionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ADAE8F0516B9C9140E90BD /* Pods_FLHTTPSessionManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113BE5D21E767061007CDC64 /* FLNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLNetworkTool.swift; sourceTree = "<group>"; };
 		11C306E51E49642D00F7ADA9 /* FLURLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLURLSessionManager.swift; sourceTree = "<group>"; };
 		11FEDA991E488C8100EA72CB /* FLHTTPSessionManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLHTTPSessionManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FEDA9C1E488C8100EA72CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		11FEDAA81E488C8100EA72CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FEDAAE1E488CBB00EA72CB /* FLHttpSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLHttpSessionManager.swift; sourceTree = "<group>"; };
 		11FEDAAF1E488CBB00EA72CB /* FLURLRequestSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLURLRequestSerialization.swift; sourceTree = "<group>"; };
+		21ADAE8F0516B9C9140E90BD /* Pods_FLHTTPSessionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLHTTPSessionManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		350F08A7A3F23B74FC48C07C /* Pods-FLHTTPSessionManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLHTTPSessionManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLHTTPSessionManager/Pods-FLHTTPSessionManager.release.xcconfig"; sourceTree = "<group>"; };
+		FDB3289ED680B00C00F8F002 /* Pods-FLHTTPSessionManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLHTTPSessionManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLHTTPSessionManager/Pods-FLHTTPSessionManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E59E9755338222913DE424B /* Pods_FLHTTPSessionManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				11FEDA9B1E488C8100EA72CB /* FLHTTPSessionManager */,
 				11FEDA9A1E488C8100EA72CB /* Products */,
+				501132F86F3B3905ACB520EA /* Pods */,
+				5D8350F7C94B3F882505DA77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +69,7 @@
 		11FEDA9B1E488C8100EA72CB /* FLHTTPSessionManager */ = {
 			isa = PBXGroup;
 			children = (
+				113BE5D21E767061007CDC64 /* FLNetworkTool.swift */,
 				11FEDA9C1E488C8100EA72CB /* AppDelegate.swift */,
 				11FEDA9E1E488C8100EA72CB /* ViewController.swift */,
 				11FEDAAE1E488CBB00EA72CB /* FLHttpSessionManager.swift */,
@@ -73,6 +83,23 @@
 			path = FLHTTPSessionManager;
 			sourceTree = "<group>";
 		};
+		501132F86F3B3905ACB520EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDB3289ED680B00C00F8F002 /* Pods-FLHTTPSessionManager.debug.xcconfig */,
+				350F08A7A3F23B74FC48C07C /* Pods-FLHTTPSessionManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D8350F7C94B3F882505DA77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21ADAE8F0516B9C9140E90BD /* Pods_FLHTTPSessionManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FEDAAB1E488C8100EA72CB /* Build configuration list for PBXNativeTarget "FLHTTPSessionManager" */;
 			buildPhases = (
+				9668F7463E1C6F68BE7DA6DF /* [CP] Check Pods Manifest.lock */,
 				11FEDA951E488C8100EA72CB /* Sources */,
 				11FEDA961E488C8100EA72CB /* Frameworks */,
 				11FEDA971E488C8100EA72CB /* Resources */,
+				756DFABD096E6B61D258E1E5 /* [CP] Embed Pods Frameworks */,
+				B38DCF33C80CB980EB31B50B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +171,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		756DFABD096E6B61D258E1E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLHTTPSessionManager/Pods-FLHTTPSessionManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9668F7463E1C6F68BE7DA6DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B38DCF33C80CB980EB31B50B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLHTTPSessionManager/Pods-FLHTTPSessionManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11FEDA951E488C8100EA72CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +228,7 @@
 				11FEDA9D1E488C8100EA72CB /* AppDelegate.swift in Sources */,
 				11FEDAB11E488CBB00EA72CB /* FLURLRequestSerialization.swift in Sources */,
 				11C306E61E49642D00F7ADA9 /* FLURLSessionManager.swift in Sources */,
+				113BE5D31E767062007CDC64 /* FLNetworkTool.swift in Sources */,
 				11FEDAB01E488CBB00EA72CB /* FLHttpSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +348,7 @@
 		};
 		11FEDAAC1E488C8100EA72CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB3289ED680B00C00F8F002 /* Pods-FLHTTPSessionManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GB8FE8WWF8;
@@ -282,6 +362,7 @@
 		};
 		11FEDAAD1E488C8100EA72CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 350F08A7A3F23B74FC48C07C /* Pods-FLHTTPSessionManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GB8FE8WWF8;
